@@ -1,0 +1,21 @@
+{
+  "name": "bookcaseapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\u001b[A\u001b[B",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thanhbinh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "express-formidable": "^1.0.0",
+    "moment": "^2.22.1",
+    "mongoose": "^5.0.14",
+    "nodemon": "^1.17.3",
+    "sharp": "^0.20.1"
+  }
+}
