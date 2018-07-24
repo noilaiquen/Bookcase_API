@@ -2,7 +2,10 @@ require('dotenv').config();
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
-const sharp = require('sharp');
+
+//module process image (ex: resize, rotate, ...etc)
+// const sharp = require('sharp');
+
 const Book = require('../models/book');
 
 //Middleware
@@ -20,7 +23,7 @@ router.get('/books', async function (req, res) {
       var books = await Book.getBooks();
       res.json({ status: 1, data: books });
    } catch (error) {
-      es.json({ status: 0, error: 'Something was wrong!' });
+      res.json({ status: 0, error: 'Something was wrong!' });
    }
 });
 
